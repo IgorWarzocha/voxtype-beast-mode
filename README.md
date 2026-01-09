@@ -2,6 +2,8 @@
 
 Upgrade your Voxtype experience with high-fidelity Whisper models, AI-powered British English cleanup, technical instruction formatting, and robust Hyprland integration. A lot of work put into enabling "lazy keypresses" that don't trigger multiple system keybinds while typing, and ensuring somewhat consistent activation via push to talk (if sticks, toggle will deactivate). Check benchmarks folder for more info and demos.
 
+Assumes you have Omarchy, somewhat correctly configured Voxtype and a snappy completions endpoint available (min 8GB VRAM models recommended, non thinking).
+
 ## Features
 - **High-Accuracy Transcription**: Support for quantized 8-bit Whisper models (Medium Q8) for near-perfect local capture.
 - **Stable Triggers**: A custom "Smart Stop" script and Hyprland submap strategy that handles "sloppy" key releases (letting go of mods before the key).
