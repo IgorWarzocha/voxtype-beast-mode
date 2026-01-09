@@ -4,6 +4,8 @@ Upgrade your Voxtype experience with high-fidelity Whisper models, AI-powered Br
 
 Assumes you have Omarchy, somewhat correctly configured Voxtype and a snappy completions endpoint available (min 8GB VRAM models recommended, non thinking).
 
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/73acf0d0-8029-4f67-a240-5a1031540f53" />
+
 ## Features
 - **High-Accuracy Transcription**: Support for quantized 8-bit Whisper models (Medium Q8) for near-perfect local capture.
 - **Stable Triggers**: A custom "Smart Stop" script and Hyprland submap strategy that handles "sloppy" key releases (letting go of mods before the key).
