@@ -1,18 +1,18 @@
-# 🎙️ Voxtype BEAST MODE
+# Voxtype BEAST MODE
 
-Upgrade your Voxtype experience with high-fidelity Whisper models, AI-powered British English cleanup, technical instruction formatting, and robust Hyprland integration.
+Upgrade your Voxtype experience with high-fidelity Whisper models, AI-powered British English cleanup, technical instruction formatting, and robust Hyprland integration. A lot of work put into enabling "lazy keypresses" that don't trigger multiple system keybinds while typing, and ensuring somewhat consistent activation via push to talk (if sticks, toggle will deactivate). Check benchmarks folder for more info and demos.
 
-## 🚀 Features
+## Features
 - **High-Accuracy Transcription**: Support for quantized 8-bit Whisper models (Medium Q8) for near-perfect local capture.
 - **Stable Triggers**: A custom "Smart Stop" script and Hyprland submap strategy that handles "sloppy" key releases (letting go of mods before the key).
 - **Modifier Suppression**: Automatically blocks Super/Ctrl/Alt while Voxtype is typing to prevent accidental shortcut triggers.
 - **Three Strategic Modes**:
-  - **General Mode**: Casual British English (mate, cheers) with aggressive noise/filler removal.
-  - **Coding Mode**: Spoken technical thoughts compiled into professional `backtick`-wrapped specifications.
-  - **Business Mode**: LinkedIn/Email ready posts with formal British grammar.
-- **Dual LLM Backend**: Easily switch between **Cloud (Gemini 2.5 Flash)** or **Local (Qwen/Llama)** for post-processing.
+  - **General Mode**: Casual British English (mate, cheers) with aggressive noise/filler removal. (SUPER CTRL X)
+  - **Coding Mode**: Spoken technical thoughts compiled into professional `backtick`-wrapped specifications. (SUPER CTRL C)
+  - **Business Mode**: LinkedIn/Email ready posts with formal British grammar. (SUPER CTRL Z)
+- **Dual LLM Backend**: Switch between **Cloud (Gemini 2.5 Flash)** or **Local (Qwen/Llama)** for post-processing.
 
-## 🛠️ Installation
+## Installation
 
 ### 1. Requirements
 Ensure you have the latest `voxtype` installed along with these dependencies:
@@ -97,7 +97,7 @@ submap = reset
 ```
 
 ## ⚙️ Backend Selection
-By default, Beast Mode uses **Gemini 2.5 Flash** for superior speed and nuance. To switch to a local LLM, edit `~/.config/voxtype/beast-mode/scripts/cleanup-template.sh`:
+By default, Beast Mode uses **Gemini 2.5 Flash** via (https://github.com/Mirrowel/LLM-API-Key-Proxy)[https://github.com/Mirrowel/LLM-API-Key-Proxy] . To switch to a local LLM, edit `~/.config/voxtype/beast-mode/scripts/cleanup-template.sh`. I've tested qwen3 4b instruct 2507 & gemma3 en4b. Wouldn't go below that.
 
 ```bash
 # Switch between Option 1 (Gemini) and Option 2 (Local LM Studio)
